@@ -9,9 +9,33 @@
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
-
+    <!-- A required text input for a full name with a placeholder, "Enter Name" -->
+    <!-- A required email type input for an email address with a placeholder, "Enter Email" -->
+    <!-- A tel type input for a telephone number with a placeholder, "Enter Telephone (optional)" -->
+    <!-- A text area for a user to include a message with a placeholder, "Enter Message" -->
+    <!-- Labels for each text input -->
+    <!-- A checkbox with text of your choosing -->
+    <!-- A submit button -->
     <!-- First, create a form tag where our inputs will be nested -->
+<form action="http://example.com/process-user.php" method="Post">
+      <label for="fullname">Full Name</label>
+     <input type="text"  id="fullname" placeholder="Enter Name" required />
 
+     <label for="email">Email</label> 
+     <input type="email" id="email" placeholder="Enter Email"required />
+
+     <label for="phone">Telephone:</label>
+       <input id="phone" type="tel" placeholder="Enter Telephone (optional)">
+
+      <label for="message">Enter Message</label>
+      <textarea id="message"  placeholder="Enter Message"></textarea>
+
+      <label>
+        <input type="checkbox" id="terms"> I have completed filling
+      </label>
+      
+      <input type="submit" value="Let's proceed">
+</form>
 
       <!-- Add a label for 'fullname'-->
 
